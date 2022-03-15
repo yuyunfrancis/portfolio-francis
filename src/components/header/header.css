@@ -43,7 +43,7 @@ header {
 .me {
     background: linear-gradient(var(--color-primary), transparent);
     width: 22rem;
-    height: 28rem;
+    height: 33rem;
     position: absolute;
     left: calc(50% - 11rem);
     margin-top: 4rem;
@@ -88,13 +88,9 @@ header {
     }
 
     .header__socials {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 0.8rem;
-        position: absolute;
-        left: 2rem;
-        bottom: 3rem;
+        display: none;
+
+
     }
 
     .header__socials::after {

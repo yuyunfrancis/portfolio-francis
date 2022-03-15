@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import Me from "../../assets/img/project.png";
+import Me from "../../assets/img/me-about.jpg";
 import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
@@ -39,7 +39,7 @@ const About = () => {
             {data.map((item) => {
               return (
                 <article className="about__card" key={item.id}>
-                  <item.icon />
+                  <item.icon className="about__icon" />
                   <h5>{item.name}</h5>
                   <small>{item.small}</small>
                 </article>
