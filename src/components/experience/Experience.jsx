@@ -35,6 +35,46 @@ const dataExperience = [
     experienceLevel: "Intermediate",
     icon: BsPatchCheckFill,
   },
+  {
+    id: 6,
+    experienceName: "Wordpress",
+    experienceLevel: "Experienced",
+    icon: BsPatchCheckFill,
+  },
+];
+
+const dataUiUx = [
+  {
+    id: 1,
+    experienceName: "Adobe XD",
+    experienceLevel: "Experienced",
+    icon: BsPatchCheckFill,
+  },
+
+  {
+    id: 2,
+    experienceName: "Figma",
+    experienceLevel: "Intermediate",
+    icon: BsPatchCheckFill,
+  },
+  {
+    id: 3,
+    experienceName: " Adobe Illustrator",
+    experienceLevel: "Intermediate",
+    icon: BsPatchCheckFill,
+  },
+  {
+    id: 4,
+    experienceName: "Sketch",
+    experienceLevel: "Intermediate",
+    icon: BsPatchCheckFill,
+  },
+  // {
+  //   id: 5,
+  //   experienceName: "Tailwind",
+  //   experienceLevel: "Intermediate",
+  //   icon: BsPatchCheckFill,
+  // },
   // {
   //   id: 6,
   //   experienceName: "",
@@ -56,16 +96,33 @@ const Experience = () => {
             {dataExperience.map((item) => {
               return (
                 <article className="experience__details" key={item.id}>
-                  <item.icon />
-                  <h4>{item.experienceName}</h4>
-                  <small className="text-light">{item.experienceLevel}</small>
+                  <item.icon className="experience__details-icon" />
+                  <div>
+                    <h4>{item.experienceName}</h4>
+                    <small className="text-light">{item.experienceLevel}</small>
+                  </div>
                 </article>
               );
             })}
           </div>
         </div>
 
-        <div className="experience__uiux-designer"></div>
+        <div className="experience__uiux-designer">
+          <h3>UI/UX Designer</h3>
+          <div className="experience__content">
+            {dataUiUx.map((item) => {
+              return (
+                <article className="experience__details" key={item.id}>
+                  <item.icon className="experience__details-icon" />
+                  <div>
+                    <h4>{item.experienceName}</h4>
+                    <small className="text-light">{item.experienceLevel}</small>
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+        </div>
       </div>
     </section>
   );
